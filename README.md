@@ -1,4 +1,4 @@
-# cryptography application
+## Cryptography application
 An application to implement cryptography to encrypt and sign a file to be sent by email using RSA public-private key mechanism.
 
 This is the readme file for fcrypt.py file
