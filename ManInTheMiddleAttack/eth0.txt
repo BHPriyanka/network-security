@@ -1,0 +1,9 @@
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 08:00:27:f0:6f:3f
+          inet addr:192.168.254.15  Bcast:192.168.254.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fef0:6f3f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:37504 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:29760 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:4942177 (4.9 MB)  TX bytes:4684695 (4.6 MB)

@@ -1,0 +1,20 @@
+team@nslabu:~$ sudo tcpdump -n -i tap0 port 80 and host 10.0.0.124
+[sudo] password for team:
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on tap0, link-type EN10MB (Ethernet), capture size 65535 bytes
+17:56:12.483265 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [S], seq 3261556224, win 5840, options [mss 1336,sackOK,TS val 870243490 ecr 0,nop,wscale 4], length 0
+17:56:12.483729 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [S], seq 3261556224, win 5840, options [mss 1336,sackOK,TS val 870243490 ecr 0,nop,wscale 4], length 0
+17:56:12.489070 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 1124722028, win 365, options [nop,nop,TS val 870243491 ecr 0], length 0
+17:56:12.489235 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [P.], seq 0:125, ack 1, win 365, options [nop,nop,TS val 870243491 ecr 0], length 125
+17:56:12.489958 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 1, win 365, options [nop,nop,TS val 870243491 ecr 0], length 0
+17:56:12.490021 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [P.], seq 0:125, ack 1, win 365, options [nop,nop,TS val 870243491 ecr 0], length 125
+17:56:12.496848 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 1325, win 546, options [nop,nop,TS val 870243494 ecr 34807808], length 0
+17:56:12.496864 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 1862, win 712, options [nop,nop,TS val 870243494 ecr 34807808], length 0
+17:56:12.496873 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [P.], seq 125:297, ack 1862, win 712, options [nop,nop,TS val 870243494 ecr 34807808], length 172
+17:56:12.497185 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 1325, win 546, options [nop,nop,TS val 870243494 ecr 34807808], length 0
+17:56:12.497226 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 1862, win 712, options [nop,nop,TS val 870243494 ecr 34807808], length 0
+17:56:12.497267 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [P.], seq 125:297, ack 1862, win 712, options [nop,nop,TS val 870243494 ecr 34807808], length 172
+17:56:12.502974 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [F.], seq 297, ack 2201, win 877, options [nop,nop,TS val 870243495 ecr 34807808], length 0
+17:56:12.503335 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [F.], seq 297, ack 2201, win 877, options [nop,nop,TS val 870243495 ecr 34807808], length 0
+17:56:12.507580 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 2202, win 877, options [nop,nop,TS val 870243497 ecr 34807808], length 0
+17:56:12.507740 IP 10.0.0.124.60914 > 10.0.0.113.80: Flags [.], ack 2202, win 877, options [nop,nop,TS val 870243497 ecr 34807808], length 0

@@ -1,0 +1,93 @@
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 08:00:27:f0:6f:3f
+          inet addr:192.168.254.15  Bcast:192.168.254.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fef0:6f3f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:37504 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:29760 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:4942177 (4.9 MB)  TX bytes:4684695 (4.6 MB)
+
+
+
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ arp 10.0.0.113
+Address                  HWtype  HWaddress           Flags Mask            Iface
+knoxville.nslab          ether   08:00:27:7b:11:4c   C                     tap0
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ arp 10.0.0.124
+Address                  HWtype  HWaddress           Flags Mask            Iface
+chicago.nslab            ether   00:50:56:9f:5a:33   C                     tap0
+
+
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ arp
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.254.2            ether   52:54:00:12:35:02   C                     eth0
+chicago.nslab            ether   00:50:56:9f:5a:33   C                     tap0
+knoxville.nslab          ether   08:00:27:7b:11:4c   C                     tap0
+paiute.nslab             ether   00:50:56:9f:3d:d9   C                     tap0
+
+
+
+
+tap0      Link encap:Ethernet  HWaddr 2a:a0:3c:cf:e6:b7
+          inet addr:10.0.0.21  Bcast:10.0.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::28a0:3cff:fecf:e6b7/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:11400 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:14308 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:100
+          RX bytes:1370438 (1.3 MB)  TX bytes:863646 (863.6 KB)
+
+
+
+
+
+
+
+
+
+team@nslabu:~$ sudo tcpdump -n -i tap0 arp
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on tap0, link-type EN10MB (Ethernet), capture size 65535 bytes
+17:53:01.192026 ARP, Request who-has 10.0.0.124 tell 10.0.0.21, length 28
+17:53:01.195542 ARP, Reply 10.0.0.124 is-at 00:50:56:9f:5a:33, length 28
+17:53:01.203087 ARP, Request who-has 10.0.0.113 tell 10.0.0.21, length 28
+17:53:01.207272 ARP, Reply 10.0.0.113 is-at 08:00:27:7b:11:4c, length 46
+17:53:27.498889 ARP, Request who-has 10.0.0.254 tell 10.0.0.21, length 28
+17:53:27.502200 ARP, Reply 10.0.0.254 is-at 00:50:56:9f:3d:d9, length 28
+17:53:32.506743 ARP, Request who-has 10.0.0.21 tell 10.0.0.254, length 28
+17:53:32.506792 ARP, Reply 10.0.0.21 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:54:19.143434 ARP, Request who-has 10.0.0.124 tell 10.0.0.21, length 28
+17:54:19.146804 ARP, Reply 10.0.0.124 is-at 00:50:56:9f:5a:33, length 28
+17:54:19.157742 ARP, Request who-has 10.0.0.113 tell 10.0.0.21, length 28
+17:54:19.161497 ARP, Reply 10.0.0.113 is-at 08:00:27:7b:11:4c, length 46
+17:54:20.168749 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:54:21.179009 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:54:22.189503 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:54:23.200396 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:54:24.210630 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:54:34.222309 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:54:44.232869 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+
+
+
+
+after quit
+17:57:44.434099 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:57:54.445118 ARP, Reply 10.0.0.113 is-at 2a:a0:3c:cf:e6:b7, length 28
+17:57:58.977820 ARP, Reply 10.0.0.113 is-at 08:00:27:7b:11:4c, length 28
+17:57:59.988313 ARP, Reply 10.0.0.113 is-at 08:00:27:7b:11:4c, length 28
+17:58:01.000056 ARP, Reply 10.0.0.113 is-at 08:00:27:7b:11:4c, length 28
+17:58:12.500459 ARP, Request who-has 10.0.0.124 tell 10.0.0.113, length 46
+
+
+
+
+
+
+
+
+
+
+
+
+
