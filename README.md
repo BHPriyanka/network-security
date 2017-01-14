@@ -5,7 +5,7 @@ Projects developed during Network Security course at Northeastern University in 
 2.  ManInTheMiddleAttacks<br/>
 3.  Network_Intrusin_Detection<br/>
 •  Extensively used Snort for Network Intrusion Detection to detect attacks through the network. 
-•  Extensively used AIDE (a Host based Intrusion Detection tool) to detect intrusions by monitoring the filesystem and alerting the users  on occurance of any suspicious changes.
+•  Extensively used AIDE (a Host based Intrusion Detection tool) to detect intrusions by monitoring the filesystem and alerting the users  on occurance of any suspicious changes.<br/>
 4.  Password_cracking<br />
 5.  Vulnerability_Scanning<br/>
 6.  BufferOverFlow<br/>
