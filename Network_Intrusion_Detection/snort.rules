@@ -1,0 +1,5 @@
+alert tcp any any -> any 80 (msg:"SERVER-WEBAPP nessus 2.x 404 probe"; flow:to_server,established; content:"/NessusTest"; fast_pattern:only; http_uri; metadata:ruleset community, service http; reference:nessus,10386; classtype:attempted-recon; sid:100002585; rev:9;)
+alert tcp any any -> any 80 (msg:"SQL 1 = 1 - possible sql injection attempt"; flow:to_server,established; content:"1=1"; fast_pattern:only; http_uri; pcre:"/(and|or)[\s\x2f\x2A]+1=1/Ui"; metadata:policy balanced-ips drop, policy security-ips drop, service http; reference:url,ferruh.mavituna.com/sql-injection-cheatsheet-oku/; classtype:web-application-attack; sid:100009439; rev:8;)
+alert icmp any any -> any any (msg:"ICMP Testing Rule"; sid:1000001; rev:1;)
+alert tcp any any -> any 80 (msg:"TCP testing Rule"; sid:1000002; rev:1;)
+alert udp any any -> any any (msg:"UDP Testing Rule"; sid:1000003; rev:1;)
