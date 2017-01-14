@@ -1,0 +1,19 @@
+team@nslabu:~$ ping -c 3 10.0.0.113
+PING 10.0.0.113 (10.0.0.113) 56(84) bytes of data.
+64 bytes from 10.0.0.113: icmp_req=1 ttl=128 time=7.16 ms
+64 bytes from 10.0.0.113: icmp_req=2 ttl=128 time=4.23 ms
+64 bytes from 10.0.0.113: icmp_req=3 ttl=128 time=4.37 ms
+
+--- 10.0.0.113 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 4.232/5.254/7.160/1.351 ms
+team@nslabu:~$ ping -c 3 10.0.0.113
+PING 10.0.0.113 (10.0.0.113) 56(84) bytes of data.
+64 bytes from 10.0.0.113: icmp_req=1 ttl=128 time=3.70 ms
+64 bytes from 10.0.0.113: icmp_req=2 ttl=128 time=4.33 ms
+64 bytes from 10.0.0.113: icmp_req=3 ttl=128 time=4.26 ms
+
+--- 10.0.0.113 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 3.708/4.103/4.335/0.285 ms
+

@@ -1,0 +1,11 @@
+team@nslabu:/home/bhpr$ sudo nmap -P0 -sS -p 60 -e tap0 -S 10.0.0.113 10.0.0.124
+
+Starting Nmap 5.21 ( http://nmap.org ) at 2015-10-13 14:16 EDT
+Nmap scan report for 10.0.0.124
+Host is up (0.0036s latency).
+PORT   STATE  SERVICE
+60/tcp closed unknown
+MAC Address: 00:50:56:9F:5A:33 (VMware)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
+

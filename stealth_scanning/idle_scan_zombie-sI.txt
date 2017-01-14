@@ -1,0 +1,16 @@
+team@nslabu:~$ sudo nmap -PN -sI 10.0.0.113:80 10.0.0.124
+
+Starting Nmap 5.21 ( http://nmap.org ) at 2015-10-13 14:29 EDT
+Idle scan using zombie 10.0.0.113 (10.0.0.113:80); Class: Incremental
+Nmap scan report for 10.0.0.124
+Host is up (0.053s latency).
+Not shown: 996 closed|filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+2049/tcp open  nfs
+MAC Address: 00:50:56:9F:5A:33 (VMware)
+
+Nmap done: 1 IP address (1 host up) scanned in 7.08 seconds
+

@@ -1,0 +1,20 @@
+team@nslabu:/home/bhpr$ telnet 10.0.0.124 80
+Trying 10.0.0.124...
+Connected to 10.0.0.124.
+Escape character is '^]'.
+GET / HTTP/1.0
+
+HTTP/1.1 200 OK
+Date: Tue, 13 Oct 2015 17:55:02 GMT
+Server: Apache/2.2.16 (Debian) PHP/5.3.3-7+squeeze14 with Suhosin-Patch mod_python/3.3.1 Python/2.6.6 mod_perl/2.0.4 Perl/v5.10.1
+Last-Modified: Fri, 11 Sep 2009 22:52:47 GMT
+ETag: "18bb4-2d-473552cbf6dc0"
+Accept-Ranges: bytes
+Content-Length: 45
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<html><body><h1>It works!</h1></body></html>
+Connection closed by foreign host.
+

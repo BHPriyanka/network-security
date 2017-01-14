@@ -1,0 +1,10 @@
+eam@nslabu:~$ nmap -sP 10.0.0.64/26
+
+
+Starting Nmap 5.21 ( http://nmap.org ) at 2015-10-13 13:44 EDT
+Nmap scan report for 10.0.0.113
+Host is up (0.0056s latency).
+Nmap scan report for 10.0.0.124
+Host is up (0.0073s latency).
+Nmap done: 64 IP addresses (2 hosts up) scanned in 18.93 seconds
+
