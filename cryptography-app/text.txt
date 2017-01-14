@@ -1,0 +1,12 @@
+Hello!!!
+Priyanka How are you??
+SHA-2 (Secure Hash Algorithm 2) is a set of cryptographic hash functions designed by the NSA.[3] SHA stands for Secure Hash Algorithm. 
+Cryptographic hash functions are mathematical operations run on digital data; by comparing the computed "hash" (the output from execution of the algorithm) 
+to a known and expected hash value, a person can determine the data's integrity. For example, computing the hash of a downloaded file and comparing 
+the result to a previously published hash result can show whether the download has been modified or tampered with.
+A key aspect of cryptographic hash functions is their collision resistance: 
+nobody should be able to find two different input values that result in the same hash output.
+
+SHA-2 includes significant changes from its predecessor, SHA-1. 
+The SHA-2 family consists of six hash functions with digests (hash values) that are 224, 256, 384 or 512 bits: 
+SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256.
