@@ -1,0 +1,9 @@
+team@nslabu:/home/bhpr/password_racking$ sudo john -incremental:all lin-pwd.txt
+[sudo] password for team:
+Sorry, try again.
+[sudo] password for team:
+Loaded 1 password hash (FreeBSD MD5 [32/32])
+
+
+
+2 hrs done

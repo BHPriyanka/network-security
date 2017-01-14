@@ -1,0 +1,89 @@
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rtgen lm alpha-numeric 1 6 0 2100 2000000 0
+hash routine: lm
+hash length: 8
+plain charset: ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+plain charset in hex: 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 30 31 32 33 34 35 36 37 38 39
+plain length range: 1 - 6
+plain charset name: alpha-numeric
+plain space total: 2238976116
+rainbow table index: 0
+reduce offset: 0
+
+generating...
+100000 of 2000000 rainbow chains generated (1 m 24 s)
+200000 of 2000000 rainbow chains generated (1 m 26 s)
+300000 of 2000000 rainbow chains generated (1 m 24 s)
+400000 of 2000000 rainbow chains generated (1 m 22 s)
+500000 of 2000000 rainbow chains generated (1 m 24 s)
+600000 of 2000000 rainbow chains generated (1 m 24 s)
+700000 of 2000000 rainbow chains generated (1 m 24 s)
+800000 of 2000000 rainbow chains generated (1 m 24 s)
+900000 of 2000000 rainbow chains generated (1 m 24 s)
+1000000 of 2000000 rainbow chains generated (1 m 23 s)
+1100000 of 2000000 rainbow chains generated (1 m 26 s)
+1200000 of 2000000 rainbow chains generated (1 m 26 s)
+1300000 of 2000000 rainbow chains generated (1 m 25 s)
+1400000 of 2000000 rainbow chains generated (1 m 24 s)
+1500000 of 2000000 rainbow chains generated (1 m 25 s)
+1600000 of 2000000 rainbow chains generated (1 m 25 s)
+1700000 of 2000000 rainbow chains generated (1 m 25 s)
+1800000 of 2000000 rainbow chains generated (1 m 25 s)
+1900000 of 2000000 rainbow chains generated (1 m 25 s)
+2000000 of 2000000 rainbow chains generated (1 m 25 s)
+
+
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rtsort lm_alpha-numeric#1-6_0_2100x2000000_0.rt
+[sudo] password for team:
+available physical memory: 917651456 bytes
+loading rainbow table...
+sorting rainbow table...
+writing sorted rainbow table...
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rtsort lm_alpha-numeric#1-6_1_2100x2000000_0.rt
+available physical memory: 884523008 bytes
+loading rainbow table...
+sorting rainbow table...
+writing sorted rainbow table...
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rtsort lm_alpha-numeric#1-6_2_2100x2000000_0.rt
+available physical memory: 852066304 bytes
+loading rainbow table...
+sorting rainbow table...
+writing sorted rainbow table...
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rtsort lm_alpha-numeric#1-6_3_2100x2000000_0.rt
+available physical memory: 819617792 bytes
+loading rainbow table...
+sorting rainbow table...
+writing sorted rainbow table...
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rtsort lm_alpha-numeric#1-6_4_2100x2000000_0.rt
+available physical memory: 787091456 bytes
+loading rainbow table...
+sorting rainbow table...
+writing sorted rainbow table...
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rtsort lm_alpha-numeric#1-6_5_2100x2000000_0.rt
+available physical memory: 754528256 bytes
+loading rainbow table...
+sorting rainbow table...
+writing sorted rainbow table...
+
+
+
+
+team@nslabu:/home/bhpr/password_cracking/rainbowcrack-1.2-src/src$ sudo ./rcrack *.rt -f /home/bhpr/password_cracking/win-pwd.txt
+lm_alpha-numeric#1-6_0_2100x2000000_0.rt:
+32000000 bytes read, disk access time: 0.02 s
+verifying the file...
+searching for 1 hash...
+plaintext of d568a3c648982ee3 is 5LYYPM
+cryptanalysis time: 0.94 s
+
+statistics
+-------------------------------------------------------
+plaintext found:          1 of 1 (100.00%)
+total disk access time:   0.02 s
+total cryptanalysis time: 0.94 s
+total chain walk step:    1252153
+total false alarm:        1166
+total chain walk step due to false alarm: 1195663
+
+result
+-------------------------------------------------------
+sherlock        5LYYPm  hex:354c5959506d

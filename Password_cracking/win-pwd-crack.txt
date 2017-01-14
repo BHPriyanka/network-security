@@ -1,0 +1,24 @@
+team@nslabu:/home/bhpr/password_racking$ sudo john -incremental:all win-pwd.txt                                                                                         
+Loaded 1 password hash (LM DES [128/128 BS SSE2])
+Warning: MaxLen = 8 is too large for the current hash type, reduced to 7
+Warning: mixed-case charset, but the current hash type is case-insensitive;
+some candidate passwords may be unnecessarily tried more than once.
+Crash recovery file is locked: /root/.john/john.rec
+team@nslabu:/home/bhpr/password_racking$ john -incremental:all win-pwd.txt                                                                                              Loaded 1 password hash (LM DES [128/128 BS SSE2])
+Warning: MaxLen = 8 is too large for the current hash type, reduced to 7
+Warning: mixed-case charset, but the current hash type is case-insensitive;
+some candidate passwords may be unnecessarily tried more than once.
+guesses: 0  time: 0:00:04:19  c/s: 8835K  trying: DUIC23D - DUIC2IC
+guesses: 0  time: 0:00:04:22  c/s: 8840K  trying: MYQSPR7 - MYQSPME
+guesses: 0  time: 0:00:04:24  c/s: 8843K  trying: NUCOGAW - NUCOGUE
+5LYYPM           (sherlock)
+guesses: 1  time: 0:00:15:21  c/s: 9084K  trying: 5LYYPF - 5LYYII
+Use the "--show" option to display all of the cracked passwords reliably
+team@nslabu:/home/bhpr/password_racking$ john --showwin-pwd.txt
+Unknown option: "--showwin-pwd.txt"
+team@nslabu:/home/bhpr/password_racking$ john --showw win-pwd.txt
+Unknown option: "--showw"
+team@nslabu:/home/bhpr/password_racking$ john --show win-pwd.txt
+sherlock:5LYYPM:1007:7F6010574E24B264D81F0225164AEE6C:::
+
+1 password hash cracked, 0 left

@@ -1,0 +1,32 @@
+team@nslabu:/home/bhpr/password_racking$ john -incremental:all windows_passwords_hashed.txt
+Loaded 9 password hashes with no different salts (LM DES [128/128 BS SSE2])
+Warning: MaxLen = 8 is too large for the current hash type, reduced to 7
+Warning: mixed-case charset, but the current hash type is case-insensitive;
+some candidate passwords may be unnecessarily tried more than once.
+COFF33           (andrea)
+guesses: 1  time: 0:00:00:02  c/s: 19687K  trying: BLIV57 - BLEA95
+DENTIST          (carlos)
+PANACHE          (robert)
+ABACUS5          (michael)
+DC72B4           (smith)
+123$             (Administrator:2)
+S0CCR1           (andrew)
+WINDOWS          (Administrator:1)
+Z1AYPM           (richard)
+guesses: 9  time: 0:00:22:18  c/s: 16647K  trying: Z1AYBY - Z1AYPW
+Warning: passwords printed above might be partial and not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+
+
+team@nslabu:/home/bhpr/password_cracking$ john --show windows_passwords_hashed.txt
+Administrator:WINDOWS123$:500:4C2E4A44958FFA57060796A6256FFB11:::
+robert:PANACHE:1011:D6B3D2E9E6D4EE5443996E01BC448CBC:::
+andrew:S0CCR1:1012:2A6BB0E4AAA8E933661977EC5EFD02F6:::
+carlos:DENTIST:1013:4A546A8FD69A1FE0121C00EB7404B773:::
+andrea:COFF33:1014:15E837FB855C92A70A1D75B91226E924:::
+michael:ABACUS5:1015:4BE619B5D33FD71EB222AD1DF041B8BC:::
+richard:Z1AYPM:1016:A3D5EAE39100B5276794C11DA366B071:::
+smith:DC72B4:1017:3CF77AE0DFA519BCDD7CFCD64B3FAE16:::
+bhpr:WINDOWS123$:1018:4C2E4A44958FFA57060796A6256FFB11:::
+
+11 password hashes cracked, 0 left
