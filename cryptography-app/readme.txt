@@ -1,3 +1,7 @@
+Cryptography Application
+
+An application to implement cryptography to encrypt and sign a file to be sent by email using RSA public-private key mechanism.
+
 This is the readme file for fcrypt.py file
 
 text.txt is the file which contains plaintext and is used for the encryption and decryption process.
@@ -39,8 +43,8 @@ where :
 The public-private key pairs for both the sender and destination are store in separate files.
 destprivkey.pem- The destination public key
 destpubkey.pem- the destination private key in pem format
-sendprivkey.pem-the sender’s private key
-sendpubkey.pem-the sender’s public key
+sendprivkey.pem-the senderâ€™s private key
+sendpubkey.pem-the senderâ€™s public key
 
 
 To generate the keys:
